@@ -16,7 +16,7 @@ function Timer() {
     const stopTimer = () => {
         clearInterval(nIntervId)
         setSeconds(0)
-        
+     x   
         document.querySelector('.stop-button').setAttribute("disabled", "true")
         document.querySelector('.start-button').removeAttribute("disabled")
         document.querySelector('.start-button').innerText = "Start"
@@ -73,7 +73,7 @@ function Timer() {
         <div className="counter-container">
             <h3 id="counter">Counter: {currentCount}</h3>
             <Button text="Start" className={`start-button ${Buttonstyle.button}`} onClick={startTimer}></Button>
-            <Button text="Stop" className={`stop-button ${Buttonstyle.button}`} onClick={stopTimer}></Button>
+            <Button text="Reset" className={`stop-button ${Buttonstyle.button}`} onClick={stopTimer}></Button>
             <Button text="Down counting" className={`up-or-down-button ${Buttonstyle.button}`} onClick={setUpOrDown}></Button>
         </div>
     )
