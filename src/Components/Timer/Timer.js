@@ -16,7 +16,7 @@ function Timer() {
     const stopTimer = () => {
         clearInterval(nIntervId)
         setSeconds(0)
-     x   
+        
         document.querySelector('.stop-button').setAttribute("disabled", "true")
         document.querySelector('.start-button').removeAttribute("disabled")
         document.querySelector('.start-button').innerText = "Start"
